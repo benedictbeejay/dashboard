@@ -14,6 +14,12 @@ module.exports = {
       backgroundImage: {
         hero: "url('/assets/BG(1).png')",
       },
+      colors: {
+        NavBg: "#00215C1A",
+      },
+      fontFamily: {
+        title: ["Geist", "sans-serif"],
+      },
     },
   },
   plugins: [],
