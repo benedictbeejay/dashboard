@@ -16,6 +16,9 @@ module.exports = {
       },
       colors: {
         NavBg: "#00215C1A",
+        Header: "#11122C",
+        bgGray: "#FAFAFB",
+        bgGrayBorder: "#F3F5FA",
       },
       fontFamily: {
         title: ["Geist", "sans-serif"],
