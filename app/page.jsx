@@ -1,6 +1,7 @@
 "use client";
 
 import Hero from "@/components/Hero";
+import Features from "@components/Features";
 import Services from "@components/Services";
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
     <div>
       <Hero />
       <Services />
+      <Features />
     </div>
   );
 };

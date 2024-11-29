@@ -19,9 +19,15 @@ module.exports = {
         Header: "#11122C",
         bgGray: "#FAFAFB",
         bgGrayBorder: "#F3F5FA",
+        offWhite: "#F3F3F3",
+        border: "#70717E1A",
+        Location: "#5C5C6E",
       },
       fontFamily: {
         title: ["Geist", "sans-serif"],
+      },
+      height: {
+        // 8600: "400rem",
       },
     },
   },

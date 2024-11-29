@@ -18,7 +18,7 @@ const Nav = () => {
         <p className="text-white font-title h-7">Pricing</p>
       </div>
 
-      <button className="h-14 w-44 px-4 py-2.5 rounded-xl  bg-white">
+      <button className="h-14 w-44 px-4 py-2.5 rounded-xl border-2 border-white bg-gradient-to-r from-white to-offWhite">
         <p className="font-title text-sm">Get Started For Free</p>
       </button>
     </div>

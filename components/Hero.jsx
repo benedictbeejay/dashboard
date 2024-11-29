@@ -20,7 +20,7 @@ const Hero = () => {
                 cutting-edge SaaS solution designed to streamline.
               </p>
 
-              <button className="h-14 w-44 px-4 py-2.5 rounded-xl  bg-white">
+              <button className="h-14 w-44 px-4 py-2.5 rounded-xl  border-2 border-white bg-gradient-to-r from-white to-offWhite">
                 <p className="font-title text-sm">Get 14 Days Free Trial</p>
               </button>
             </div>
@@ -37,7 +37,7 @@ const Hero = () => {
           </article>
           <article className="right w-1/2 h-full relative">
             <div className="w-full h-80 absolute bottom-0">
-              <div className="h-3/5 w-80 my-24 ml-12 rounded-lg bg-white">
+              <div className="h-3/5 w-80 my-24 ml-12 rounded-lg  border-2 border-white bg-gradient-to-r from-white to-offWhite">
                 <div className="w-full px-4 py-3 h-1/2">
                   <p className="font-title font-medium">
                     "From effortless expense tracking to real-time reporting and

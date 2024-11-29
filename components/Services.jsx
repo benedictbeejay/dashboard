@@ -4,8 +4,8 @@ const Services = () => {
   return (
     <div className="w-full h-screen relative">
       <div className="w-10/12 h-4/5 absolute top-1/2 -translate-x-1/2 left-1/2 -translate-y-1/2">
-        <div className="w-4/6 absolute top-0 left-1/2 -translate-x-1/2 px-2">
-          <p className="font-title font-medium text-Header text-5xl ">
+        <div className="w-4/6 absolute  top-0 left-1/2 -translate-x-1/2 px-2">
+          <p className="font-title flex justify-center text-center font-medium text-Header text-5xl ">
             Tailored Services for Your Needs
           </p>
         </div>
