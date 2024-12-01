@@ -1,6 +1,6 @@
 import React from "react";
 
-const Machine = () => {
+const Connect = () => {
   return (
     <div className="h-screen relative">
       <div className="absolute flex w-full h-4/5 top-1/2 -translate-y-1/2">
@@ -107,7 +107,7 @@ const Machine = () => {
             <div className="w-full h-1/3">
               <div className="w-full h-1/3 relative">
                 <p className="font-title text-left absolute top-1/2 -translate-y-1/2 font-medium  text-Header text-4xl">
-                  Machine learning and AI
+                  Connect with apps
                 </p>
               </div>
               <div className="w-full h-2/3 relative">
@@ -123,19 +123,19 @@ const Machine = () => {
                 <div className="h-14 top-0 p-4 space-x-2 flex bg-bgGrayBorder rounded-lg">
                   <img src="/assets/bg.png" className="w-4 h-4 my-auto" />
                   <p className="font-title text-Header text-sm m-auto">
-                    Ensure you have the latest security patches installed
+                    Recurring subscription fees create a steady
                   </p>
                 </div>
                 <div className="h-14 absolute w-full top-1/2 -translate-y-1/2 p-4 space-x-2 flex bg-bgGrayBorder rounded-lg">
                   <img src="/assets/bg.png" className="w-4 h-4 my-auto" />
                   <p className="font-title text-Header text-sm m-auto">
-                    Updates often introduce new features, bug fixes
+                    Subscription models incentivize customer retention
                   </p>
                 </div>
                 <div className="h-14 absolute bottom-0 p-4 w-full space-x-2 flex bg-bgGrayBorder rounded-lg">
                   <img src="/assets/bg.png" className="w-4 h-4 my-auto" />
                   <p className="font-title text-Header text-sm m-auto">
-                    No need to manually check for and install updates
+                    Subscription models can reduce the need for marketing
                   </p>
                 </div>
               </div>
@@ -147,4 +147,4 @@ const Machine = () => {
   );
 };
 
-export default Machine;
+export default Connect;
