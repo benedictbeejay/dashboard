@@ -9,7 +9,7 @@ const Machine = () => {
 
           <div className="absolute duration-100 justify-between p-4 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 h-96 w-96 bg-white rounded-xl ">
             <div
-              className="w-full mb-4 mt-1 flex gap-2 h-1/5 rounded-xl py-3 px-4 bg-offWhite border-2
+              className="w-full mb-3 mt-4 flex gap-2 h-1/6 rounded-xl py-3 px-4 bg-offWhite border-2
               border-border/10"
             >
               <img src="/assets/stars.png" />

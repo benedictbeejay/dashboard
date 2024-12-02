@@ -5,7 +5,7 @@ import Nav from "./Nav";
 
 const Hero = () => {
   return (
-    <div className="w-full h-screen bg-hero relative">
+    <div className="w-full h-screen bg-hero bg-cover bg-no-repeat relative">
       <div>
         <Nav />
         <div className="absolute flex h-4/6 top-48 w-10/12 left-1/2 -translate-x-1/2">

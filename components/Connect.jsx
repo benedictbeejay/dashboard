@@ -8,95 +8,87 @@ const Connect = () => {
           <img src="/assets/machine.png" className=" flex  h-full m-auto" />
 
           <div className="absolute duration-100 justify-between p-4 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 h-96 w-96 bg-white rounded-xl ">
-            <div
-              className="w-full mb-4 mt-1 flex gap-2 h-1/5 rounded-xl py-3 px-4 bg-offWhite border-2
-              border-border/10"
-            >
-              <img src="/assets/stars.png" />
-              <input
-                type="text"
-                className="bg-transparent"
-                placeholder="Search target audience"
-              />
-            </div>
-            <div className="w-full h-4/5 gap-2 block space-y-2 ">
-              <div
-                className="w-full flex  gap-2 h-1/5 rounded-xl py-2 px-4 bg-offWhite border-2
-              border-border/10"
-              >
-                <div className="w-3/5 block">
-                  <div className="h-1/2 flex">
-                    <p className="font-title  font-medium text-Header text-sm">
-                      26 - 40 Software Engineer
-                    </p>
-                  </div>
+            <div className="w-full h-full relative">
+              <div className="h-1/5 w-full relative">
+                <p className="font-title text-Header font-medium text-xl absolute left-1/2 -translate-x-1/2 top-1/4 -translate-y-1/4">
+                  Integrations List
+                </p>
+              </div>
 
-                  <div className="h-1/2 flex">
-                    <img src="/assets/location.png" />
-                    <p className="font-title ml-2 font-medium text-Location text-sm">
-                      London, UK
-                    </p>
+              <div className="h-3/5 w-full absolute top-1/2 -translate-y-1/2 ">
+                <div className="h-1/3 py-1">
+                  <div className="w-full h-full flex py-2 pl-4 pr-6 bg-bgGray rounded-lg">
+                    <div className="w-1/6 ">
+                      <img
+                        src="/assets/linkedin.png"
+                        className="h-full m-auto"
+                      />
+                    </div>
+                    <div className="w-4/6 block pl-2">
+                      <p className="font-title text-Header font-medium text-lg h-1/2">
+                        LinkedIn Company
+                      </p>
+                      <p className="h-1/2 text-Location text-sm">
+                        Ability to connect with other
+                      </p>
+                    </div>
+                    <div className="w-1/6 relative">
+                      <img
+                        className=" absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
+                        src="/assets/elements.png"
+                      />
+                    </div>
                   </div>
                 </div>
-                <div className="w-2/5 relative">
-                  <div className="w-fit h-1/2 flex gap-1 absolute top-1/2 -translate-y-1/2 right-0">
-                    <img src="/assets/circle.png" className="h-2 w-2 m-auto" />
-                    <p className="font-title text-Location">17 Online</p>
+                <div className="h-1/3 py-1">
+                  <div className="w-full h-full flex py-2 pl-4 pr-6 bg-bgGray rounded-lg">
+                    <div className="w-1/6 ">
+                      <img src="/assets/reddit.png" className="h-full m-auto" />
+                    </div>
+                    <div className="w-4/6 block pl-2">
+                      <div className="w-full h-1/2 relative">
+                        <div className="absolute h-1/2 w-5/6 rounded-lg top-1/2 -translate-y-1/2 bg-Location/10"></div>
+                      </div>
+                      <div className="w-full h-1/2 relative">
+                        <div className="absolute h-1/2 w-4/6 rounded-lg top-1/2 -translate-y-1/2 bg-Location/5"></div>
+                      </div>
+                    </div>
+                    <div className="w-1/6 relative">
+                      <img
+                        className=" absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
+                        src="/assets/elements.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="h-1/3 py-1">
+                  <div className="w-full h-full flex py-2 pl-4 pr-6 bg-bgGray rounded-lg">
+                    <div className="w-1/6 ">
+                      <img src="/assets/pin.png" className="h-full m-auto" />
+                    </div>
+                    <div className="w-4/6 block pl-2">
+                      <div className="w-full h-1/2 relative">
+                        <div className="absolute h-1/2 w-5/6 rounded-lg top-1/2 -translate-y-1/2 bg-Location/10"></div>
+                      </div>
+                      <div className="w-full h-1/2 relative">
+                        <div className="absolute h-1/2 w-4/6 rounded-lg top-1/2 -translate-y-1/2 bg-Location/5"></div>
+                      </div>
+                    </div>
+                    <div className="w-1/6 relative">
+                      <img
+                        className=" absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
+                        src="/assets/elements.png"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
-              <div
-                className="w-full flex  gap-2 h-1/5 rounded-xl py-2 px-4 bg-offWhite border-2
-              border-border/10"
-              >
-                <div className="w-3/5 block">
-                  <div className="h-1/2 flex">
-                    <div className="h-2/3 w-4/5 bg-Location/10 rounded-md"></div>
-                  </div>
-                  <div className="h-1/2 flex">
-                    <div className="h-2/3 w-2/5 bg-Location/5 rounded-md"></div>
-                  </div>
-                </div>
-                <div className="w-2/5 relative">
-                  <div className="w-5/6 h-1/2  flex gap-1 absolute top-1/2 -translate-y-1/2 right-0">
-                    <div className="h-2/3 w-full m-auto rounded-md bg-Location/5"></div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="w-full flex  gap-2 h-1/5 rounded-xl py-2 px-4 bg-offWhite border-2
-              border-border/10"
-              >
-                <div className="w-3/5 block">
-                  <div className="h-1/2 flex">
-                    <div className="h-2/3 w-4/5 bg-Location/10 rounded-md"></div>
-                  </div>
-                  <div className="h-1/2 flex">
-                    <div className="h-2/3 w-2/5 bg-Location/5 rounded-md"></div>
-                  </div>
-                </div>
-                <div className="w-2/5 relative">
-                  <div className="w-5/6 h-1/2  flex gap-1 absolute top-1/2 -translate-y-1/2 right-0">
-                    <div className="h-2/3 w-full m-auto rounded-md bg-Location/5"></div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="w-full flex  gap-2 h-1/5 rounded-xl py-2 px-4 bg-offWhite border-2
-              border-border/10"
-              >
-                <div className="w-3/5 block">
-                  <div className="h-1/2 flex">
-                    <div className="h-2/3 w-4/5 bg-Location/10 rounded-md"></div>
-                  </div>
-                  <div className="h-1/2 flex">
-                    <div className="h-2/3 w-2/5 bg-Location/5 rounded-md"></div>
-                  </div>
-                </div>
-                <div className="w-2/5 relative">
-                  <div className="w-5/6 h-1/2  flex gap-1 absolute top-1/2 -translate-y-1/2 right-0">
-                    <div className="h-2/3 w-full m-auto rounded-md bg-Location/5"></div>
-                  </div>
+
+              <div className="absolute h-1/5 w-full bottom-0">
+                <div className="h-full w-full relative">
+                  <button className="absolute bottom-1 rounded-lg w-full h-4/6 text-white font-title bg-Header">
+                    Connect to FinFlow
+                  </button>
                 </div>
               </div>
             </div>
@@ -129,7 +121,7 @@ const Connect = () => {
                 <div className="h-14 absolute w-full top-1/2 -translate-y-1/2 p-4 space-x-2 flex bg-bgGrayBorder rounded-lg">
                   <img src="/assets/bg.png" className="w-4 h-4 my-auto" />
                   <p className="font-title text-Header text-sm m-auto">
-                    Subscription models incentivize customer retention
+                    Subscription models incentivize customer retention.
                   </p>
                 </div>
                 <div className="h-14 absolute bottom-0 p-4 w-full space-x-2 flex bg-bgGrayBorder rounded-lg">
