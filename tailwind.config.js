@@ -24,6 +24,9 @@ module.exports = {
         Location: "#5C5C6E",
         Balance: "#667085",
         Blue: "#1552FD",
+        Chart: "#ECF2FF",
+        down: "#BFD7FF",
+        month: "#98A2B3",
       },
       fontFamily: {
         title: ["Geist", "sans-serif"],
