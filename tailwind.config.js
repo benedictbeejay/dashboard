@@ -22,6 +22,8 @@ module.exports = {
         offWhite: "#F3F3F3",
         border: "#70717E1A",
         Location: "#5C5C6E",
+        Balance: "#667085",
+        Blue: "#1552FD",
       },
       fontFamily: {
         title: ["Geist", "sans-serif"],

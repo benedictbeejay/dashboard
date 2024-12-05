@@ -114,7 +114,7 @@ const Connect = () => {
               <div className="w-full h-full relative">
                 <div className="h-14 top-0 p-4 space-x-2 flex bg-bgGrayBorder rounded-lg">
                   <img src="/assets/bg.png" className="w-4 h-4 my-auto" />
-                  <p className="font-title text-Header text-sm m-auto">
+                  <p className="font-title text-Header text-sm my-auto">
                     Recurring subscription fees create a steady
                   </p>
                 </div>
