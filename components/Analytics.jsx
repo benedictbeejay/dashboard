@@ -150,7 +150,9 @@ const Analytics = () => {
                 <div className="h-14 absolute bottom-0 p-4 w-full space-x-2 flex bg-bgGrayBorder rounded-lg">
                   <img src="/assets/bg.png" className="w-4 h-4 my-auto" />
                   <p className="font-title text-Header text-sm m-auto">
-                    Track key metrics and KPIs to measure success
+                    {/* Track key metrics and KPIs to measure success
+                     */}
+                    Identify trends and patterns to predict future outcomes
                   </p>
                 </div>
               </div>

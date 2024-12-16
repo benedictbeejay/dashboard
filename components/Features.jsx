@@ -3,6 +3,7 @@
 import Analytics from "./Analytics";
 import Connect from "./Connect";
 import Machine from "./Machine";
+import Why from "./Why";
 
 const Features = () => {
   return (
@@ -17,6 +18,7 @@ const Features = () => {
           <Machine />
           <Connect />
           <Analytics />
+          <Why />
         </div>
       </div>
     </div>
