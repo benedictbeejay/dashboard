@@ -1,9 +1,10 @@
+"use client";
 import React from "react";
 
 const Why = () => {
   return (
     <div className="h-screen relative">
-      <div className="h-4/5 absolute top-1/2 -translate-y-1/2 w-full">
+      <div className="absolute flex w-10/12 h-4/5 top-1/2 -translate-x-1/2 left-1/2 -translate-y-1/2">
         <div className="">
           <p className="font-title flex justify-center text-center font-medium text-Header text-5xl ">
             Why Should You Use FinFlow

@@ -16,7 +16,7 @@ const Analytics = () => {
 
   return (
     <div className="h-screen relative">
-      <div className="absolute flex w-full h-4/5 top-1/2 -translate-y-1/2">
+      <div className="absolute flex w-10/12 h-4/5 top-1/2 -translate-x-1/2 left-1/2 -translate-y-1/2">
         {/* Left Section */}
         <div className="left w-1/2 h-full relative">
           <img
