@@ -8,6 +8,8 @@ import Machine from "@components/Machine";
 import Connect from "@components/Connect";
 import Analytics from "@components/Analytics";
 import Why from "@components/Why";
+import Advantage from "@components/Advantage";
+import Faq from "@components/Faq";
 
 const Home = () => {
   return (
@@ -20,6 +22,8 @@ const Home = () => {
       <Analytics />
       <Why />
       <About />
+      <Advantage />
+      <Faq />
     </div>
   );
 };

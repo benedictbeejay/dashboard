@@ -13,6 +13,8 @@ module.exports = {
       },
       backgroundImage: {
         hero: "url('/assets/BG(1).png')",
+        women: "url('/assets/women.jpg')",
+        hijab: "url('/assets/hijabwomen.png')",
       },
       colors: {
         NavBg: "#00215C1A",
@@ -27,6 +29,7 @@ module.exports = {
         Chart: "#ECF2FF",
         down: "#BFD7FF",
         month: "#98A2B3",
+        nietz: "#000F29",
       },
       fontFamily: {
         title: ["Geist", "sans-serif"],
