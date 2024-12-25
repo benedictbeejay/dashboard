@@ -10,6 +10,7 @@ import Analytics from "@components/Analytics";
 import Why from "@components/Why";
 import Advantage from "@components/Advantage";
 import Faq from "@components/Faq";
+import Control from "@components/Control";
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
       <About />
       <Advantage />
       <Faq />
+      <Control />
     </div>
   );
 };

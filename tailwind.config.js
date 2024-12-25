@@ -15,6 +15,7 @@ module.exports = {
         hero: "url('/assets/BG(1).png')",
         women: "url('/assets/women.jpg')",
         hijab: "url('/assets/hijabwomen.png')",
+        BG: "url('/assets/BG.jpg')",
       },
       colors: {
         NavBg: "#00215C1A",
@@ -26,6 +27,7 @@ module.exports = {
         Location: "#5C5C6E",
         Balance: "#667085",
         Blue: "#1552FD",
+        Blu: "#0D3197",
         Chart: "#ECF2FF",
         down: "#BFD7FF",
         month: "#98A2B3",
