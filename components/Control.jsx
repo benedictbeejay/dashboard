@@ -26,7 +26,7 @@ const Control = () => {
             <div className="col-span-3 h-full relative">
               <input
                 type="search"
-                className="bg-transparent border-transparent w-4/5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-bgGrayBorder font-title"
+                className=" pl-2 bg-transparent border-transparent w-4/5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-bgGrayBorder font-title"
                 placeholder="Enter your email address"
               />
             </div>

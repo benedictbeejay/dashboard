@@ -31,7 +31,7 @@ const Faq = () => {
   ];
 
   return (
-    <div className="w-screen h-screen relative">
+    <div className="w-screen h-screen relative" id="faqs">
       <div className="absolute w-3/5 h-4/5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <div className="w-full ">
           <p className="font-title flex justify-center text-center font-medium text-Header text-5xl">

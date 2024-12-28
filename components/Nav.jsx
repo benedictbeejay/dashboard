@@ -5,7 +5,10 @@ import FinFlow from "@/public/assets/FinFlow.svg";
 
 const Nav = () => {
   return (
-    <div className="flex w-10/12 h-14 justify-between absolute top-10 left-1/2 -translate-x-1/2">
+    <div
+      id="products"
+      className="flex w-10/12 h-14 justify-between absolute top-10 left-1/2 -translate-x-1/2"
+    >
       <div className="flex gap-2 h-full">
         <img className="h-10 w-11 mt-1.5" src="/assets/Layer_2 (1).svg" />
         <img className="w-28 h-10 mt-1.5" src="/assets/FinFlow.svg" />

@@ -11,6 +11,7 @@ import Why from "@components/Why";
 import Advantage from "@components/Advantage";
 import Faq from "@components/Faq";
 import Control from "@components/Control";
+import Footer from "@components/Footer";
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
       <Advantage />
       <Faq />
       <Control />
+      <Footer />
     </div>
   );
 };
