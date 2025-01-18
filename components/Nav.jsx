@@ -151,6 +151,7 @@ const Nav = () => {
               variants={hoverBorder}
               initial="initial"
               whileHover="animate"
+              whileTap="animate"
               className="w-full h-full absolute left-0 top-0 z-10 border-b-2 border-white"
             ></motion.span>
           </p>
