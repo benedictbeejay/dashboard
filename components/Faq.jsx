@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 const Faq = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -35,7 +36,18 @@ const Faq = () => {
       <div className="absolute w-3/5 h-4/5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <div className="w-full ">
           <p className="font-title flex justify-center text-center font-medium text-Header text-5xl">
-            Frequently Asked Questions
+            {Array.from("Frequently Asked Questions").map((letter, index) => (
+              <motion.span
+                key={index}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.05 }}
+                viewport={{ once: true, amount: "all" }}
+                className={letter === " " ? "inline-block w-[0.25em]" : ""}
+              >
+                {letter}
+              </motion.span>
+            ))}
           </p>
         </div>
 
