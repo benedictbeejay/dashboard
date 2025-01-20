@@ -1,4 +1,47 @@
 import React from "react";
+import { animate, delay, motion } from "framer-motion";
+
+const whitebg = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      delay: 1,
+    },
+  },
+};
+
+const stagger = {
+  initial: {
+    opacity: 0,
+    // y: 100,
+  },
+  animate: (index) => ({
+    opacity: 1,
+    // y: 0,
+    transition: {
+      delay: 0.5 * index,
+    },
+  }),
+};
+
+const paragraph = {
+  initial: {
+    y: 100,
+    opacity: 0,
+  },
+  animate: {
+    y: -50,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      delay: 1,
+    },
+  },
+};
 
 const Connect = () => {
   return (
@@ -7,7 +50,13 @@ const Connect = () => {
         <div className="left w-1/2 h-full relative">
           <img src="/assets/machine.png" className=" flex  h-full m-auto" />
 
-          <div className="absolute duration-100 justify-between p-4 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 h-96 w-96 bg-white rounded-xl ">
+          <motion.div
+            variants={whitebg}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, amount: "all" }}
+            className="absolute duration-100 justify-between p-4 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 h-96 w-96 bg-white rounded-xl "
+          >
             <div className="w-full h-full relative">
               <div className="h-1/5 w-full relative">
                 <p className="font-title text-Header font-medium text-xl absolute left-1/2 -translate-x-1/2 top-1/4 -translate-y-1/4">
@@ -86,50 +135,90 @@ const Connect = () => {
 
               <div className="absolute h-1/5 w-full bottom-0">
                 <div className="h-full w-full relative">
-                  <button className="absolute bottom-1 rounded-lg w-full h-4/6 text-white font-title bg-Header">
-                    Connect to FinFlow
+                  <button className="absolute bottom-1 rounded-lg w-full h-4/6 text-white font-title bg-Header hover:bg-Blu duration-300 ">
+                    {Array.from("Connect to FinFlow").map((l, i) => (
+                      <motion.span
+                        key={i}
+                        initial={{ opacity: 0, y: 100 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: "all" }}
+                        transition={{ delay: i * 0.1 }}
+                        className={l === " " ? "inline-block w-[0.25em]" : ""}
+                      >
+                        {l}
+                      </motion.span>
+                    ))}
                   </button>
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="relative right w-1/2 h-full ">
           <div className="absolute space-y-0 block w-4/5 right-0 h-full">
             <div className="w-full h-1/3">
               <div className="w-full h-1/3 relative">
                 <p className="font-title text-left absolute top-1/2 -translate-y-1/2 font-medium  text-Header text-4xl">
-                  Connect with apps
+                  {Array.from("Connect with apps").map((l, i) => (
+                    <motion.span
+                      key={i}
+                      initial={{ opacity: 0, y: 100 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true, amount: "all" }}
+                      transition={{ delay: i * 0.05 }}
+                      className={l === " " ? "inline-block w-[0.25em]" : ""}
+                    >
+                      {l}
+                    </motion.span>
+                  ))}
                 </p>
               </div>
               <div className="w-full h-2/3 relative">
-                <p className="font-title text-xl absolute top-1/2 -translate-y-1/2 text-Header/70">
+                <motion.p
+                  variants={paragraph}
+                  initial="initial"
+                  whileInView="animate"
+                  viewport={{ once: true, amount: "all" }}
+                  className="font-title text-xl absolute top-1/2 -translate-y-1/2 text-Header/70"
+                >
                   In today's fast-paced business environment, organizations are
                   increasingly relying on customizations and automation to
                   enhance their operational efficiency and effectiveness.
-                </p>
+                </motion.p>
               </div>
             </div>
-            <div className="absolute w-full h-1/3 bottom-0 ">
+
+            <div className="absolute w-full h-1/3 bottom-0">
               <div className="w-full h-full relative">
-                <div className="h-14 top-0 p-4 space-x-2 flex bg-bgGrayBorder rounded-lg">
-                  <img src="/assets/bg.png" className="w-4 h-4 my-auto" />
-                  <p className="font-title text-Header text-sm my-auto">
-                    Recurring subscription fees create a steady
-                  </p>
-                </div>
-                <div className="h-14 absolute w-full top-1/2 -translate-y-1/2 p-4 space-x-2 flex bg-bgGrayBorder rounded-lg">
-                  <img src="/assets/bg.png" className="w-4 h-4 my-auto" />
-                  <p className="font-title text-Header text-sm m-auto">
-                    Subscription models incentivize customer retention.
-                  </p>
-                </div>
-                <div className="h-14 absolute bottom-0 p-4 w-full space-x-2 flex bg-bgGrayBorder rounded-lg">
-                  <img src="/assets/bg.png" className="w-4 h-4 my-auto" />
-                  <p className="font-title text-Header text-sm m-auto">
-                    Subscription models can reduce the need for marketing
-                  </p>
-                </div>
+                {[
+                  {
+                    text: "Ensure you have the latest security patches installed",
+                    position: "top-0",
+                  },
+                  {
+                    text: "Updates often introduce new features, bug fixes",
+                    position: "top-1/2 -translate-y-1/2",
+                  },
+                  {
+                    text: "No need to manually check for and install updates",
+                    position: "bottom-0",
+                  },
+                ].map((item, index) => (
+                  <motion.div
+                    variants={stagger}
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                    key={index}
+                    custom={index}
+                    className={`h-14 absolute w-full ${item.position} p-4 space-x-2 flex bg-bgGrayBorder rounded-lg`}
+                  >
+                    <img src="/assets/bg.png" className="w-4 h-4 my-auto" />
+                    <p className="font-title text-Header text-sm m-auto">
+                      {item.text}
+                    </p>
+                  </motion.div>
+                ))}
               </div>
             </div>
           </div>

@@ -45,7 +45,7 @@ const Services = () => {
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.05 }}
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: "all" }}
                 className={l === " " ? "inline-block w-[0.25em]" : ""}
               >
                 {l}
@@ -91,7 +91,7 @@ const Services = () => {
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: i * 0.05 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, amount: "all" }}
                     className={l === " " ? "inline-block w-[0.25em]" : ""}
                   >
                     {l}
@@ -107,7 +107,7 @@ const Services = () => {
               variants={img}
               initial="initial"
               whileInView="animate"
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: "all" }}
               className="w-1/2 flex"
               src="/assets/Rectangle 2326.png"
               alt="Lead Capture Forms"
@@ -136,7 +136,7 @@ const Services = () => {
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: i * 0.05 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, amount: "all" }}
                     className={l === " " ? "inline-block w-[0.25em]" : ""}
                   >
                     {l}

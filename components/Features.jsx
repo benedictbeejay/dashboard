@@ -17,7 +17,7 @@ const Features = () => {
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.05 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: "all" }}
               className={l === " " ? "inline-block w-[0.25em]" : ""}
             >
               {l}

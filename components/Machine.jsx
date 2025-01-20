@@ -1,6 +1,5 @@
 import React from "react";
 import { animate, delay, motion } from "framer-motion";
-// import { transform } from "@node_modules/next/dist/build/swc/generated-native";
 
 const whitebg = {
   initial: {
@@ -10,7 +9,7 @@ const whitebg = {
     opacity: 1,
     transition: {
       duration: 0.5,
-      delay: 0.3,
+      delay: 1,
     },
   },
 };
@@ -35,10 +34,11 @@ const paragraph = {
     opacity: 0,
   },
   animate: {
-    y: 0,
+    y: -50,
     opacity: 1,
     transition: {
-      duration: 0.3,
+      delay: 1,
+      duration: 0.5,
     },
   },
 };
@@ -54,7 +54,7 @@ const Machine = () => {
             variants={whitebg}
             initial="initial"
             whileInView="animate"
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: "all" }}
             className="absolute  duration-100 justify-between p-4 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 h-96 w-96 bg-white rounded-xl "
           >
             <motion.div
@@ -156,12 +156,12 @@ const Machine = () => {
             <div className="w-full h-1/3">
               <div className="w-full h-1/3 relative">
                 <p className="font-title text-left absolute top-1/2 -translate-y-1/2 font-medium  text-Header text-4xl">
-                  {Array.from(" Machine learning and AI").map((l, i) => (
+                  {Array.from("Machine learning and AI").map((l, i) => (
                     <motion.span
                       key={i}
                       initial={{ opacity: 0, y: 100 }}
                       whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
+                      viewport={{ once: true, amount: "all" }}
                       transition={{ delay: i * 0.05 }}
                       className={l === " " ? "inline-block w-[0.25em]" : ""}
                     >
@@ -175,7 +175,7 @@ const Machine = () => {
                   variants={paragraph}
                   initial="initial"
                   whileInView="animate"
-                  viewport={{ once: true }}
+                  viewport={{ once: true, amount: "all" }}
                   className="font-title text-xl absolute top-1/2 -translate-y-1/2 text-Header/70"
                 >
                   In today's fast-paced business environment, organizations are
@@ -227,7 +227,7 @@ const Machine = () => {
                     variants={stagger}
                     initial="initial"
                     whileInView="animate"
-                    viewport={{ once: true }}
+                    viewport={{ once: true, amount: "all" }}
                     key={index}
                     custom={index}
                     className={`h-14 absolute w-full ${item.position} p-4 space-x-2 flex bg-bgGrayBorder rounded-lg`}
